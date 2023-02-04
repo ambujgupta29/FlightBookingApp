@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/firstscreenbg"
+    tools:context=".FirstScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hello,Name"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:paddingHorizontal="10dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corners"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:layout_weight="1"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+
+
+
+
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spinCountryfrom"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:popupBackground="@android:color/white"-->
+<!--                android:scrollbars="none"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:spinnerMode="dropdown" />-->
+<!--            <Spinner-->
+<!--                android:id="@+id/spinCountryto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:popupBackground="@android:color/white"-->
+<!--                android:scrollbars="none"-->
+<!--                android:spinnerMode="dropdown" />-->
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/datePickerButtonfrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="JAN 01 2020"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    style="?android:spinnerStyle"/>
+                <Button
+                    android:id="@+id/datePickerButtonto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JAN 01 2020"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    style="?android:spinnerStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/searchflightsbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search Flights"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
