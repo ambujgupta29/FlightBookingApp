@@ -26,7 +26,11 @@ class ListScreen : AppCompatActivity() {
     }
     private fun prepareMovieData() {
         FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
+        FlightList.add(FlightModel("15:30","19:30","KNP","BLR","Indigo",8932.20))
         FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
         FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
+        FlightList.add(FlightModel("15:30","19:30","KNP","BLR","Indigo",8932.20))
+        FlightList.add(FlightModel("18:30","21:30","LKO","BLR","Indigo",32.20))
+
     }
     }

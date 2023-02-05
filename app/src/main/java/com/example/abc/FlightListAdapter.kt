@@ -1,13 +1,11 @@
 package com.example.abc
 
 import android.content.Intent
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.NonNull
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 
 //class FlightListAdapter(private val context: Context, private val arrayList: java.util.ArrayList<FlightModel>) : BaseAdapter() {
@@ -70,6 +68,19 @@ internal class FlightListAdapter(private val arrayList: java.util.ArrayList<Flig
         holder.airportto.text = flight.airportto
         holder.airlinename.text = flight.airlinename
         holder.price.text = flight.price.toString()
+
+       var context = holder.itemView.getContext();
+        holder.itemView.setOnClickListener {
+            val i = Intent(context, BookingScreen::class.java)
+            i.putExtra("arrivaltime",flight.arrivaltime);
+            i.putExtra("departuretime",flight.departuretime);
+            i.putExtra("airportfrom",flight.airportfrom);
+            i.putExtra("airportto",flight.airportto);
+            i.putExtra("airlinename",flight.airlinename);
+            i.putExtra("price",flight.price.toString());
+            context.startActivity(i)
+        }
+
 
 //        if (selectedPosition === position) holder.itemView.setBackgroundColor(Color.parseColor("#000000")) else holder.itemView.setBackgroundColor(
 //            Color.parseColor("#ffffff")
