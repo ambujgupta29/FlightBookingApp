@@ -1,6 +1,8 @@
 package com.example.abc
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -24,5 +26,11 @@ class BookingScreen : AppCompatActivity() {
         airlinename.setText(intent.getStringExtra("airlinename"));
         price.setText(intent.getStringExtra("price"));
         arrivaltime.setText(intent.getStringExtra("arrivaltime"));
+
+        var bookflightbutton = findViewById<Button>(R.id.bookflightbutton)
+        bookflightbutton.setOnClickListener {
+            val intent = Intent(this, ListScreen::class.java)
+            startActivity(intent)
+        }
     }
 }

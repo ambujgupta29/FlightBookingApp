@@ -38,7 +38,7 @@ class FirstScreen : AppCompatActivity() {
             datePicker.show()
 
         })
-        datePickerButtonfrom.setOnClickListener(View.OnClickListener {
+        datePickerButtonto.setOnClickListener(View.OnClickListener {
             val getDate=Calendar.getInstance()
             val datePicker=DatePickerDialog(this,android.R.style.Theme_Holo_Dialog_MinWidth,DatePickerDialog.OnDateSetListener { datePicker, i, i2, i3 ->
                 val selectDate=Calendar.getInstance()
@@ -47,7 +47,7 @@ class FirstScreen : AppCompatActivity() {
                 selectDate.set(Calendar.DAY_OF_MONTH,i3)
                 val date=formatDate.format(selectDate.time)
                 Toast.makeText(this,date,Toast.LENGTH_SHORT).show()
-                datePickerButtonfrom.setText(date)
+                datePickerButtonto.setText(date)
             },getDate.get(Calendar.YEAR),getDate.get(Calendar.MONTH),getDate.get(Calendar.DAY_OF_MONTH))
             datePicker.show()
 
